@@ -1,0 +1,15 @@
+Vendor::Spec.new do |s|
+  s.name           "OCHamcrest"
+  s.version        "0.1"
+                   
+  s.authors        "jonreid"
+  s.email          "contact@twobitlabs.com"
+  s.description    "Matcher library for OCMock and validations"
+                   
+  s.homepage       "https://github.com/twobitlabs/OCHamcrest"
+  s.source         "https://github.com/twobitlabs/OCHamcrest"
+
+  s.build_setting  "HEADER_SEARCH_PATHS", "Vendor"
+
+  s.files          Dir['Source/**/*.{h,mm}']
+end
