@@ -11,5 +11,7 @@ Vendor::Spec.new do |s|
 
   s.build_setting  "HEADER_SEARCH_PATHS", "Vendor"
 
+  s.per_file_flag  "-fno-objc-arc"
+
   s.files          Dir['Source/**/*.{h,mm}']
 end
